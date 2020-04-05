@@ -1,6 +1,6 @@
-// TODO: implement R, C, L, W, W_0, W_e, CPE
 package circuits
 
+// TODO: implement R, C, L, W, W_0, W_e, CPE
 import (
 	"fmt"
 
