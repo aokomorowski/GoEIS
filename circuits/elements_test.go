@@ -33,19 +33,19 @@ func TestResistor(t *testing.T) {
 	}
 }
 
-// func TestCreateCapacitor(t *testing.T) {
-// 	testCases := []struct {
-// 		desc     string
-// 		capacity float64
-// 	}{
-// 		{
-// 			desc:     "",
-// 			capacity: 120.0,
-// 		},
-// 	}
-// 	for _, tC := range testCases {
-// 		t.Run(tC.desc, func(t *testing.T) {
-
-// 		})
-// 	}
-// }
+func TestCreateCapacitor(t *testing.T) {
+	testCases := []struct {
+		desc     string
+		capacity float64
+	}{
+		{
+			desc:     "",
+			capacity: 120.0,
+		},
+	}
+	for _, tC := range testCases {
+		t.Run(tC.desc, func(t *testing.T) {
+		
+		})
+	}
+}

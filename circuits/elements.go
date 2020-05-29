@@ -16,6 +16,11 @@ func CreateResistor(resistance float64) (float64, error) {
 	return resistance, err
 }
 
-// func CreateCapacitor(conductivity float64) (float64 error) {
-// 	return impedance, err
-// }
+func CreateCapacitor(conductivity float64) (complex128 error) {
+	if conductivity < 0 {
+		err := fmt.Errorf("Given resistance is lesser than 0: %g", conductivity)
+		log.Error(err)
+	}
+	impedance := complex(0, )
+	return impedance, err
+}
