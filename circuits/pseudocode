@@ -1,7 +1,0 @@
-funkcja zwracająca funkcję dla danego kondensatora
-
-capacity -> createCapacitor(capacity) -> calculateImpedanceCapacitor(capacitor)
-
-float64 -> Capacitor -> impedance(complex128)
-
-I to samo dla rezystora i pozostałych elementów
