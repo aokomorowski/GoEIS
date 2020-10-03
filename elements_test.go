@@ -17,12 +17,24 @@ func TestCreateResistor(t *testing.T) {
 }
 
 
-func TestAddInSeries(t *testing.T) {
+func TestSumInSeries(t *testing.T) {
 	resistor1 := createResistor(10)
-	resistor2 := createResistor(20)
-	elements := Elements{Element(resistor1),Element(resistor2)}
-	got := addInSeries(elements)(10.0)
-	want := Impedance(30.0)
+	capacitor1 := createCapacitor(20)
+	elements := Elements{Element(resistor1),Element(capacitor1)}
+	got := sumInSeries(elements)(10.0)
+	want := Impedance(10-0.0007957747i)
+
+	if got != want {
+		t.Errorf("Got: %v \n Want: %v", got, want)
+	}
+}
+
+func TestSumInParallel(t *testing.T) {
+	resistor1 := createResistor(10)
+	capacitor1 := createCapacitor(20)
+	elements := Elements{Element(resistor1),Element(capacitor1)}
+	got := sumInParallel(elements)(10.0)
+	want := Impedance(10-0.0007957747i)
 
 	if got != want {
 		t.Errorf("Got: %v \n Want: %v", got, want)
