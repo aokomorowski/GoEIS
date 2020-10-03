@@ -1,29 +1,10 @@
-# README #
+# GoEIS #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+GoEIS is open-source library for processing and analysis of Electrochemical Impedance Spectroscopy results. 
+It's being created as part of my masters' thesis and will be opened for contributors in 2021.
 
-### What is this repository for? ###
+### Requirements
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+```
+go 1.14
+```

@@ -23,6 +23,6 @@ func main() {
 	resistor1 := createResistor(10)
 	resistor2 := createResistor(20)
 	elements := Elements{Element(resistor1),Element(resistor2)}
-	addInSeries(elements)(10.0)
+	sumInSeries(elements)( .0)
 	return
 }
